@@ -1,3 +1,5 @@
+"""This program asks a user to add classes they are taking this semester to a list.
+    It will then print out the classes they have written."""
 
 print('\nCreate a list of classes you\'re taking this semester!')
 

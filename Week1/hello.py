@@ -1,5 +1,10 @@
 from datetime import datetime
 
+"""This program will as the user their name and birth month. It will
+    greet them and let them know how many letters are in their name.
+    If their birth month is the same as the current month, it will print
+    'Happy birthday month!'. Else, the program ends at printing their name length."""
+
 def main():
 
     user_name, user_birth_month = get_user_input() # Get return values from function
