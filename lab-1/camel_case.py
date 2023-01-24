@@ -7,6 +7,7 @@ import re
 
 def main():
     
+    display_banner()
     user_sentence = input('\nPlease enter a sentence to be converted into camelCase: ')
     user_sentence = validate_sentence(user_sentence) # Validate user sentence using function
 
@@ -16,6 +17,12 @@ def main():
     list_of_camel_words = capitalize_words(list_of_words) # Get list of capitalized words
     camel_case_sentence = join_sentence(list_of_camel_words) # Join list of words into a sentence without spaces
     print_camel_case_sentence(first_word_lowercase, camel_case_sentence)
+
+def display_banner():
+    """Display banner at top of program as label for user"""
+    msg = "camelCase Program!"
+    stars = '*' * len(msg)
+    print(f'\n{stars} \n{msg} \n{stars} \n')
 
 def validate_sentence(user_sentence):
     # Using regular expressions, determine whether the sentence begins with a letter or contains special characters, respectively
